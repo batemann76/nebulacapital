@@ -194,6 +194,35 @@
       color: var(--gray);
     }
 
+    /* ─── Correo ───────────────────────────────────────── */
+    .mail-rule {
+      display: block;
+      width: 28px;
+      height: 0.5px;
+      background: var(--rule);
+      margin: 20px auto 14px;
+    }
+    .email {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      text-decoration: none;
+      color: var(--gray-dim);
+      transition: color 0.25s ease;
+    }
+    .email:hover,
+    .email:focus-visible { color: var(--gray); }
+    .email svg {
+      width: 12px;
+      height: 12px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+    .email span {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+    }
+
     /* ─── Móvil ─────────────────────────────────────────── */
     @media (max-width: 480px) {
       .title    { letter-spacing: 0.18em; }
@@ -249,6 +278,12 @@
           <span>LinkedIn</span>
         </a>
       </div>
+
+      <span class="mail-rule" aria-hidden="true"></span>
+      <a class="email" href="mailto:madrid@nebulacapital.es">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="1.5"/><path d="M2.5 6l9.5 7 9.5-7" fill="none" stroke="#F5F0E8" stroke-width="1.8"/></svg>
+        <span>madrid@nebulacapital.es</span>
+      </a>
     </div>
 
   </main>
